@@ -1,0 +1,79 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\AridDay\Desktop\PSU4PSU\Schematic_Artifacts\PCB1.PcbDoc
+Date     : 4/19/2023
+Time     : 6:05:41 PM
+
+Processing Rule : Clearance Constraint (Gap=5mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InPolygon),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net VCC Between Pad C5-1(4785mil,2270mil) on Multi-Layer And Pad C15-2(5190mil,2265mil) on Multi-Layer 
+Rule Violations :1
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=20mil) (Max=40mil) (Preferred=30mil) (InNetClass('Power'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=10mil) (Max=30mil) (Preferred=20mil) (InNetClass('3V3'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=10mil) (Max=300mil) (Preferred=20mil) (InNet('GND'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=6mil) (Max=400mil) (Preferred=8mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=4mil) (Conductor Width=6mil) (Air Gap=6mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=4mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=10mil) (Max=265mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=5mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Room Sheet1 (Bounding Region = (130mil, 135mil, 5625mil, 3785mil) (InComponentClass('Sheet1'))
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+   Violation between Height Constraint: Small Component C2-500HXW100MEFR18X45 (1426.703mil,2485.454mil) on L1 Actual Height = 1850.63mil
+Rule Violations :1
+
+Waived Violations Of Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+   Waived Violation between Height Constraint: Small Component C3-500HXW100MEFR18X45 (1435.276mil,3265mil) on L1 Actual Height = 1850.63milWaived by Petr Esakov at 4/19/2023 4:10:44 PMDC
+   Waived Violation between Height Constraint: Small Component C4-EGXF630ELL511MK25S (4780mil,2940mil) on L1 Actual Height = 1043.307milWaived by Petr Esakov at 4/19/2023 4:11:24 PMDC
+   Waived Violation between Height Constraint: Small Component C5-EGXF630ELL511MK25S (4785mil,2270mil) on L1 Actual Height = 1043.307milWaived by Petr Esakov at 4/19/2023 4:11:30 PMDC
+   Waived Violation between Height Constraint: Small Component C6-EGXF630ELL511MK25S (4790mil,1620mil) on L1 Actual Height = 1043.307milWaived by Petr Esakov at 4/19/2023 4:11:36 PMDC
+   Waived Violation between Height Constraint: Small Component C7-EGXF630ELL511MK25S (4790mil,970mil) on L1 Actual Height = 1043.307milWaived by Petr Esakov at 4/19/2023 4:37:38 PMDC
+Waived Violations :5
+
+
+Violations Detected : 2
+Waived Violations : 5
+Time Elapsed        : 00:00:01
