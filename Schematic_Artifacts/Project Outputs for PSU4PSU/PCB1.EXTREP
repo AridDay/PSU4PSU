@@ -1,19 +1,22 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: PCB1.GBR   4/19/2023  6:31:09 PM
+Gerber File Extension Report For: PCB1.GBR   4/19/2023  7:07:10 PM
 ------------------------------------------------------------------------------------------
 
 
 ------------------------------------------------------------------------------------------
 Layer Extension     Layer Description                      
 ------------------------------------------------------------------------------------------
-.GTO                Top Overlay                             
-.GTP                Top Paste                               
-.GTS                Top Solder                              
 .GTL                L1                                      
 .GBL                L2                                      
-.GBS                Bottom Solder                           
-.GBP                Bottom Paste                            
+.GPB                Bottom Pad Master                       
+.GPT                Top Pad Master                          
+.GTO                Top Overlay                             
 .GBO                Bottom Overlay                          
+.GTS                Top Solder                              
+.GBS                Bottom Solder                           
+.GTP                Top Paste                               
+.GBP                Bottom Paste                            
+.GKO                Keep-Out Layer                          
 .GM1                Mechanical 1                            
 .GM5                Top Assembly                            
 .GM13               Top 3D Body                             
@@ -23,12 +26,9 @@ Layer Extension     Layer Description
 .GM21               Bottom Courtyard                        
 .GM23               Bottom 3D Body                          
 .GM24               Bottom Component Center                 
-.GKO                Keep-Out Layer                          
-.GPT                Top Pad Master                          
-.GPB                Bottom Pad Master                       
-.GD1                Drill Drawing                           
-.GD2                Drill Drawing                           
-.GG1                Drill Guide                             
-.GG2                Drill Guide                             
 .GM                 Profile                                 
+.GD1                Non-plated through-hole drill file      
+.GD2                Plated through-hole drill file          
+.GD1                Drill Drawing                           
+.GG1                Drill Guide                             
 ------------------------------------------------------------------------------------------
