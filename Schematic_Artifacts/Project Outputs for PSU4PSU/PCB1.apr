@@ -5,11 +5,11 @@ D13   RECTANGULAR        33.858      22.835       0.000 FLASH     180.000
 D14   RECTANGULAR       104.331      68.898       0.000 FLASH       0.000
 D15   RECTANGULAR        59.843      98.425       0.000 FLASH      90.000
 D16   RECTANGULAR        37.402      57.087       0.000 FLASH      90.000
-D17   RECTANGULAR        39.626      55.441       0.000 FLASH     270.000
-D18   RECTANGULAR        41.657      53.626       0.000 FLASH      90.000
+D17   RECTANGULAR        39.626      55.442       0.000 FLASH     270.000
+D18   RECTANGULAR        41.659      53.627       0.000 FLASH      90.000
 D19   RECTANGULAR        79.134      64.961       0.000 FLASH      90.000
 D20   RECTANGULAR        54.724      44.882       0.000 FLASH       0.000
-D21   RECTANGULAR        61.217     134.181       0.000 FLASH     270.000
+D21   RECTANGULAR        61.217     134.182       0.000 FLASH     270.000
 D22   RECTANGULAR        60.039      25.591       0.000 FLASH     270.000
 D23   RECTANGULAR       118.110      62.992       0.000 FLASH     270.000
 D24   RECTANGULAR       236.220     236.220       0.000 FLASH     270.000
@@ -70,9 +70,9 @@ D78   ROUNDED           150.000     150.000       0.000 FLASH       0.000
 D79   ROUNDED           150.000     150.000       0.000 FLASH       0.000
 D80   ROUNDED           150.000     150.000       0.000 FLASH       0.000
 D81   ROUNDED           150.000     150.000       0.000 FLASH       0.000
-D82   ROUNDED            50.799      50.799       0.000 FLASH     270.000
+D82   ROUNDED            50.800      50.800       0.000 FLASH     270.000
 D83   ROUNDED            29.528      29.528       0.000 FLASH     270.000
-D84   ROUNDED            50.799      50.799       0.000 FLASH       0.000
+D84   ROUNDED            50.800      50.800       0.000 FLASH       0.000
 D85   ROUNDED            34.000      34.000       0.000 FLASH      90.000
 D86   ROUNDED            31.496      31.496       0.000 FLASH     270.000
 D87   ROUNDED            51.968      51.968       0.000 FLASH       0.000
@@ -80,4 +80,4 @@ D88   ROUNDED            39.370      39.370       0.000 FLASH     270.000
 D89   ROUNDED            28.000      28.000       0.000 FLASH       0.000
 D90   ROUNDED             5.000       5.000       0.000  LINE       0.000
 D91   ROUNDED             5.000       5.000       0.000  LINE       0.000
-D92   ROUNDED             6.665       6.665       0.000  LINE       0.000
+D92   ROUNDED             6.667       6.667       0.000  LINE       0.000
