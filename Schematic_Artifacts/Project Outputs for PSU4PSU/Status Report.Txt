@@ -1,36 +1,13 @@
-Output: Gerber X2 Files
-Type  : GerberX2
-From  : Variant [[No Variations]] of Project [PSU4PSU.PrjPcb]
-   Generated File[PCB1.GTL]
-   Generated File[PCB1.GBL]
-   Generated File[PCB1.GPB]
-   Generated File[PCB1.GPT]
-   Generated File[PCB1.GTO]
-   Generated File[PCB1.GBO]
-   Generated File[PCB1.GTS]
-   Generated File[PCB1.GBS]
-   Generated File[PCB1.GTP]
-   Generated File[PCB1.GBP]
-   Generated File[PCB1.GKO]
-   Generated File[PCB1.GM1]
-   Generated File[PCB1.GM5]
-   Generated File[PCB1.GM13]
-   Generated File[PCB1.GM15]
-   Generated File[PCB1.GM16]
-   Generated File[PCB1.GM20]
-   Generated File[PCB1.GM21]
-   Generated File[PCB1.GM23]
-   Generated File[PCB1.GM24]
-   Generated File[PCB1.GM]
-   Generated File[PCB1.GD1]
-   Generated File[PCB1.GD2]
-   Generated File[PCB1.GD1]
-   Generated File[PCB1.GG1]
-   Generated File[PCB1.EXTREP]
-   Generated File[PCB1.REP]
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [PSU4PSU.PrjPcb]
+   Generated File[PCB1.TXT]
+   Generated File[PCB1.DRL]
+   Generated File[PCB1.LDP]
+   Generated File[PCB1.DRR]
 
 
-Files Generated   : 27
+Files Generated   : 4
 Documents Printed : 0
 
-Finished Output Generation At 7:07:15 PM On 4/19/2023
+Finished Output Generation At 12:46:47 AM On 4/20/2023

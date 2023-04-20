@@ -2,10 +2,10 @@
 FileName = PCB1.GBR
 AutoAperture = True
 *************************************************************
-Generating : L1
+Generating : Top Layer
       File : PCB1.GTL
 
-    Adding Layer      : L1
+    Adding Layer      : Top Layer
 
     Adding Layer      : Multi-Layer
 
@@ -49,17 +49,17 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : L2
+Generating : Bottom Layer
       File : PCB1.GBL
 
-    Adding Layer      : L2
+    Adding Layer      : Bottom Layer
 
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
     D25
-    D26
+    D27
     D32
     D33
     D34
@@ -79,7 +79,7 @@ Used DCodes :
 Generating : Bottom Pad Master
       File : PCB1.GPB
 
-    Adding Layer      : L2
+    Adding Layer      : Bottom Layer
 
     Adding Layer      : Multi-Layer
 
@@ -103,7 +103,7 @@ Used DCodes :
 Generating : Top Pad Master
       File : PCB1.GPT
 
-    Adding Layer      : L1
+    Adding Layer      : Top Layer
 
     Adding Layer      : Multi-Layer
 
@@ -170,7 +170,7 @@ Generating : Top Solder
 
     Adding Layer      : Top Solder
 
-    Adding Layer      : L1
+    Adding Layer      : Top Layer
 
     Adding Layer      : Multi-Layer
 
@@ -212,7 +212,7 @@ Generating : Bottom Solder
 
     Adding Layer      : Bottom Solder
 
-    Adding Layer      : L2
+    Adding Layer      : Bottom Layer
 
     Adding Layer      : Multi-Layer
 
@@ -239,7 +239,7 @@ Generating : Top Paste
 
     Adding Layer      : Top Paste
 
-    Adding Layer      : L1
+    Adding Layer      : Top Layer
 
     Adding Layer      : Multi-Layer
 
@@ -268,7 +268,7 @@ Generating : Bottom Paste
 
     Adding Layer      : Bottom Paste
 
-    Adding Layer      : L2
+    Adding Layer      : Bottom Layer
 
     Adding Layer      : Multi-Layer
 
@@ -430,7 +430,7 @@ Used DCodes :
 Generating : Drill Drawing
       File : PCB1.GD1
 
-    Adding Drill Pair : L1-L2
+    Adding Drill Pair : Top Layer-Bottom Layer
 
     Adding Layer      : Drill Drawing
 
@@ -444,7 +444,7 @@ Used DCodes :
 Generating : Drill Guide
       File : PCB1.GG1
 
-    Adding Drill Pair : L1-L2
+    Adding Drill Pair : Top Layer-Bottom Layer
 
     Adding Layer      : Drill Guide
 

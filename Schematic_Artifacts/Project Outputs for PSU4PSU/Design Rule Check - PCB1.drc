@@ -1,0 +1,73 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\AridDay\Desktop\PSU4PSU\Schematic_Artifacts\PCB1.PcbDoc
+Date     : 4/20/2023
+Time     : 12:39:36 AM
+
+Processing Rule : Clearance Constraint (Gap=8mil) (OnLayer('Top Layer')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7.874mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=8mil) (OnLayer('Bottom Layer')),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=3.5mil) (Max=300mil) (Preferred=15mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=3mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=7.874mil) (Max=248.031mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=3.937mil) (All),(All)
+   Violation between Minimum Solder Mask Sliver Constraint: (1.842mil < 3.937mil) Between Pad IC2-1(1425.752mil,1557.147mil) on Top Layer And Pad IC2-4(1352.13mil,1616.202mil) on Top Layer [Top Solder] Mask Sliver [1.842mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (1.842mil < 3.937mil) Between Pad IC2-3(1425.752mil,1675.257mil) on Top Layer And Pad IC2-4(1352.13mil,1616.202mil) on Top Layer [Top Solder] Mask Sliver [1.842mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (1.842mil < 3.937mil) Between Pad IC4-1(1413.622mil,670.945mil) on Top Layer And Pad IC4-4(1340mil,730mil) on Top Layer [Top Solder] Mask Sliver [1.842mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (1.842mil < 3.937mil) Between Pad IC4-3(1413.622mil,789.055mil) on Top Layer And Pad IC4-4(1340mil,730mil) on Top Layer [Top Solder] Mask Sliver [1.842mil]
+Rule Violations :4
+
+Processing Rule : Silk To Solder Mask (Clearance=3.937mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=3.937mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+Waived Violations Of Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+   Waived Violation between Height Constraint: Small Component C2-500HXW100MEFR18X45 (1426.703mil,2485.454mil) on Top Layer Actual Height = 1850.63milWaived by Petr Esakov at 4/20/2023 12:29:53 AM
+   Waived Violation between Height Constraint: Small Component C3-500HXW100MEFR18X45 (1435.276mil,3265mil) on Top Layer Actual Height = 1850.63milWaived by Petr Esakov at 4/20/2023 12:30:03 AMDC
+   Waived Violation between Height Constraint: Small Component C4-EGXF630ELL511MK25S (4780mil,2940mil) on Top Layer Actual Height = 1043.307milWaived by Petr Esakov at 4/20/2023 12:38:41 AMDC
+   Waived Violation between Height Constraint: Small Component C5-EGXF630ELL511MK25S (4785mil,2270mil) on Top Layer Actual Height = 1043.307milWaived by Petr Esakov at 4/20/2023 12:38:49 AMDC
+   Waived Violation between Height Constraint: Small Component C6-EGXF630ELL511MK25S (4790mil,1620mil) on Top Layer Actual Height = 1043.307milWaived by Petr Esakov at 4/20/2023 12:38:55 AMDC
+   Waived Violation between Height Constraint: Small Component C7-EGXF630ELL511MK25S (4790mil,970mil) on Top Layer Actual Height = 1043.307milWaived by Petr Esakov at 4/20/2023 12:39:01 AMDC
+Waived Violations :6
+
+
+Violations Detected : 4
+Waived Violations : 6
+Time Elapsed        : 00:00:01
