@@ -58,7 +58,7 @@ void setup(){
   pinMode(6, OUTPUT);    /* PWM controlling the flyback */
   digitalWrite(9, HIGH); 
   Serial.begin(9600);
-  Serial.println("Enter AT Commands:");
+  Serial.println("Set Voltage:");
   BTSerial.begin(9600);  // HC-05 default speed in AT command mode
   
 //////////////////////////////////////////////////////////////////////
