@@ -1,3 +1,4 @@
+#include <TimerOne.h>
 /*
 Jenny Lynn Kelly & Petr Esakov
 PSU4PSU Microcontroller Integration
@@ -35,11 +36,10 @@ This sketch prints "Hello World!" to the LCD
 
  */
 
-
 #include <SoftwareSerial.h>
 #include <LiquidCrystal.h>
 
-float setVoltage = 0;
+float setVoltage = 10;
 int dutyCycle = 0;
 const int Vmon = A1;
 float VmonVal;
@@ -50,12 +50,11 @@ SoftwareSerial BTSerial(10, 11);   // RX | TX
 
 // initialize the library by associating any needed LCD interface pin
 // with the arduino pin number it is connected to
-const int rs = 7, en = 6, d4 = 2, d5 = 3, d6 = 4, d7 = 5;
+const int rs = 7, en = 12, d4 = 2, d5 = 3, d6 = 4, d7 = 5;
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 
 void setup(){
   pinMode(9, OUTPUT);    /* this pin will pull the HC-05 pin 34 (KEY pin) HIGH to switch module to AT mode */
-  pinMode(6, OUTPUT);    /* PWM controlling the flyback */
   digitalWrite(9, HIGH); 
   Serial.begin(9600);
   Serial.println("Set Voltage:");
@@ -64,40 +63,34 @@ void setup(){
 //////////////////////////////////////////////////////////////////////
 
   // set up the LCD's number of columns and rows:
-  lcd.begin(16, 2);
+  lcd.begin(16, 2);  
+  
+  // Print a message to the LCD.
+  lcd.print("  Power Supply");
   
 //////////////////////////////////////////////////////////////////////
+  Timer1.initialize(6);
+  Timer1.pwm(9, 0);
 
-  // set up PWM timer with default values:
-  OCR0A = 100;
-  OCR0B = 0;
-  // 160kHz non-inverted PWM on OC0A with no prescaler
-  TCCR0A = (1 << COM0A1) | (1<<WGM01) | (1<<WGM00); 
-  TCCR0B = (1 << CS00);
 
 //////////////////////////////////////////////////////////////////////
 
-}
-
-void setPWM(int dC){ //Value between 0 and 100
-  OCR0B = dutyCycle;
-  dutyCycle = dC;
 }
 
 void adjustPWM(){
   float vread = (30 * VmonVal)/1023;
-  if((setVoltage-vread)>0.6){
-	  if(dutyCycle > 0){
-		  dutyCycle = dutyCycle - 1;
+  if(setVoltage>vread){
+	  if(dutyCycle > 100){
+		  dutyCycle = dutyCycle - 100;
 	  }
   }
   
-  if((vread-setVoltage)>0.6){
-	  if(dutyCycle < 50){
-		  dutyCycle = dutyCycle + 1;
+  if(setVoltage<vread){
+	  if(dutyCycle < 511){
+		  dutyCycle = dutyCycle + 100;
 	  }
   }
-  setPWM(dutyCycle);
+  Timer1.pwm(9,dutyCycle);
 }
 
 void loop(){
@@ -106,22 +99,32 @@ void loop(){
   // (note: line 1 is the second row, since counting begins with 0):
   lcd.setCursor(0, 0);
   // read the input on voltage monitor pin:
+  int sensorValue = analogRead(A3);
+  float voltage = VmonVal * (30.0 / 1023.0);
+  // setVoltage = voltage;
+  
   VmonVal = analogRead(Vmon);
   ImonVal = analogRead(Imon);
+
+  float current = ImonVal * (5.0 / 1023.0);
   
   //Feed back read voltage value and adjust PWM duty cycle to make it match the set voltage value
   adjustPWM(); 
 
+  // print out the value you read:
   // print out the value you read:
   //Serial.println(voltage);
 
   // Print a message to the LCD.
   //lcd.print(voltage); //connect this later to Vout/Iout sensors and Bluetooth 
   if (Serial.available()){
-	setVoltage = Serial.parseFloat();
+	  float input = Serial.parseFloat();
+    setVoltage = input;
+    //Serial.println(VmonVal);
+    Serial.println(setVoltage);
+
   }	  
 
-  /* CURRENTLY COMMENTED OUT BLUETOOTH CODE
   //The code below allows for commands and messages to be sent from COMPUTER (serial monitor) -> HC-05
   if (Serial.available())           // Keep reading from Arduino Serial Monitor 
     BTSerial.write(Serial.read());  // and send to HC-05
@@ -130,7 +133,7 @@ void loop(){
   if (BTSerial.available())         // Keep reading from HC-05 and send to Arduino 
     Serial.write(BTSerial.read());  // Serial Monitor
 	
-  */
+  
 
 //////////////////////////////////////////////////////////////////////
 
@@ -138,7 +141,10 @@ void loop(){
   // (note: line 1 is the second row, since counting begins with 0):
   lcd.setCursor(0, 1);
   // print the number of seconds since reset:
-  lcd.print(millis() / 1000);
+  lcd.print("V:");
+  lcd.print(voltage);
+  lcd.print("  I:");
+  lcd.print(current);
 
 //////////////////////////////////////////////////////////////////////
 
